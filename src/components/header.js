@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../App.css'
+import '../styles/header.css'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { SiGoogletranslate } from 'react-icons/si'
 import useDropdownMenu from 'react-accessible-dropdown-menu-hook';
@@ -32,10 +32,10 @@ function Header() {
           </button>
           <h2>Peterson Larson</h2>
           <nav ref={navRef}>
-            <a href="/#">{translate('home')}</a>
-            <a href="/#">{translate('about')}</a>
-            <a href="/#">{translate('skills')}</a>
-            <a href="/#">{translate('contact')}</a>
+            <a href="#home">{translate('home')}</a>
+            <a href="#about">{translate('about')}</a>
+            <a href="#skills">{translate('skills')}</a>
+            <a href="#contact">{translate('contact')}</a>
             <button className='nav-btn nav-close-btn' onClick={showNavbar}>
               <FaTimes style={{backgroundColor: '#191b1f'}} />
             </button>

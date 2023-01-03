@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
-  background-color: #282c34;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: space-between;
 }
