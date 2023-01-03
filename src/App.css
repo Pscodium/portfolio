@@ -14,7 +14,7 @@ header {
 header .translate-btn {
   padding: 5px;
   cursor: pointer;
-  background-color: transparent;
+  background: transparent;
   border: none;
   outline: none;
   color: #fff;
