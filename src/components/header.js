@@ -28,7 +28,7 @@ function Header() {
     <>
       <header>
           <button {...buttonProps} className='translate-btn'>
-            <SiGoogletranslate />
+            <SiGoogletranslate style={{backgroundColor: '#191b1f'}} />
           </button>
           <h2>Peterson Larson</h2>
           <nav ref={navRef}>
@@ -37,11 +37,11 @@ function Header() {
             <a href="/#">{translate('skills')}</a>
             <a href="/#">{translate('contact')}</a>
             <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-              <FaTimes />
+              <FaTimes style={{backgroundColor: '#191b1f'}} />
             </button>
           </nav>
           <button hidden={navButton} className='nav-btn' onClick={showNavbar}>
-            <FaBars />
+            <FaBars style={{backgroundColor: '#191b1f'}} />
           </button>
       </header>
       <div className={isOpen? 'visible' : 'hidden'} role='menu'>
