@@ -11,20 +11,20 @@ export default function Footer() {
             alignItems="center"
         >
             <Button backgroundColor="#1a202c" onClick={() => window.open("https://github.com/Pscodium")}>
-                <Icon as={FaGithub} />
+                <Icon color="#fff" as={FaGithub} />
             </Button>
             <Button backgroundColor="#1a202c" onClick={() => window.open("https://www.linkedin.com/in/peterson-larson-3b4209182/")}>
-                <Icon as={FaLinkedin} />
+                <Icon color="#fff" as={FaLinkedin} />
             </Button>
             <Button backgroundColor="#1a202c" onClick={() => window.open("https://dev.to/pscodium")}>
-                <Icon as={FaDev} />
+                <Icon color="#fff" as={FaDev} />
             </Button>
             <Button backgroundColor="#1a202c" onClick={() => window.open("https://www.instagram.com/pscodium/")}>
-                <Icon as={FaInstagram} />
+                <Icon color="#fff" as={FaInstagram} />
             </Button>
             <a href={require("../assets/Peterson_Larson_Resume.pdf")} download="Peterson-Resume.pdf">
                 <Button backgroundColor="#1a202c">
-                    <Icon as={FaFileAlt} />
+                    <Icon color="#fff" as={FaFileAlt} />
                 </Button>
             </a>
         </Flex>
