@@ -1,0 +1,8 @@
+
+.container {
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    margin: 0px;
+}
