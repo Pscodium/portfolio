@@ -68,6 +68,7 @@ export default function Markdown() {
         <>
             <div data-color-mode="dark" className="container" style={{height: viewHeight}}>
                 <MDEditor
+                    visibleDragbar={false}
                     style={{ width: "80%" }}
                     value={value}
                     height={viewHeight / 1}
