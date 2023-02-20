@@ -58,7 +58,7 @@ export default function Markdown() {
     }, [text]);
 
     async function getReadme() {
-        fetch(`https://raw.githubusercontent.com/Pscodium/Pscodium/main/README.md`)
+        fetch(`https://raw.githubusercontent.com/Pscodium/portfolio/master/src/assets/README.md`)
             .then(response => response.text())
             .then(result => setText(result))
             .catch(error => console.log(error)); 
