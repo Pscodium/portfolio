@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Icon, Button} from "@chakra-ui/react";
+import { Flex, Icon, Button } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaDev, FaInstagram, FaFileAlt } from 'react-icons/fa';
 
 export default function Footer() {
@@ -10,21 +10,21 @@ export default function Footer() {
             justifyContent="center"
             alignItems="center"
         >
-            <Button backgroundColor="#1a202c" onClick={() => window.open("https://github.com/Pscodium")}>
-                <Icon color="#fff" as={FaGithub} />
+            <Button borderRadius="5px 0px 0px 5px" onClick={() => window.open("https://github.com/Pscodium")}>
+                <Icon as={FaGithub} />
             </Button>
-            <Button backgroundColor="#1a202c" onClick={() => window.open("https://www.linkedin.com/in/peterson-larson-3b4209182/")}>
-                <Icon color="#fff" as={FaLinkedin} />
+            <Button borderRadius="0px" onClick={() => window.open("https://www.linkedin.com/in/peterson-larson-3b4209182/")}>
+                <Icon as={FaLinkedin} />
             </Button>
-            <Button backgroundColor="#1a202c" onClick={() => window.open("https://dev.to/pscodium")}>
-                <Icon color="#fff" as={FaDev} />
+            <Button borderRadius="0px" onClick={() => window.open("https://dev.to/pscodium")}>
+                <Icon as={FaDev} />
             </Button>
-            <Button backgroundColor="#1a202c" onClick={() => window.open("https://www.instagram.com/pscodium/")}>
-                <Icon color="#fff" as={FaInstagram} />
+            <Button borderRadius="0px" onClick={() => window.open("https://www.instagram.com/pscodium/")}>
+                <Icon as={FaInstagram} />
             </Button>
             <a href={require("../assets/Peterson_Larson_Resume.pdf")} download="Peterson-Resume.pdf">
-                <Button backgroundColor="#1a202c">
-                    <Icon color="#fff" as={FaFileAlt} />
+                <Button borderRadius="0px 5px 5px 0px">
+                    <Icon as={FaFileAlt} />
                 </Button>
             </a>
         </Flex>

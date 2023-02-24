@@ -1,55 +1,96 @@
-<h1 align="center"> Welcome to my portfolio </h1>
+<div style="display: inline-flex; align-items: center">
+    <img src="https://cdn.midjourney.com/cda590d8-eeb4-4997-a111-3c443c2c07ee/grid_0.png" style="width:250px; height: 250px; border-radius: 50%"/>
+    <div style="margin-left: 30px">
+        <p style="font-size: 40px; font-weight: 600;">Peterson Larson</p>
+        <p>Typescript Developer</p>
+    </div>
+</div>
 
+-----
+<h1>About me</h1>
+
+Hello, my name is Peterson, I'm 22 years old and I live in Brazil.
+
+I have a great admiration for software development and I like to create applications that somehow increase my technical knowledge.
+
+Now I'm looking for new job opportunities.
+
+<h1>Skills</h1>
+
+<div style="flex-direction: column; display: flex">
+    <div style="flex-direction:row; display: inline-flex; align-items: center; height: 50px; margin-top: 10px">
+        <p style="font-size: 18px; height: 10px; font-weight: 500;">Languages: </p>
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" />
+    </div>
+    <div style="flex-direction:row; display: inline-flex; align-items: center; height: 50px;">
+        <p style="font-size: 18px; height: 10px; font-weight: 500;">Frameworks: </p>
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/styled--components-4ecc8b?style=for-the-badge&logo=styled-components&logoColor=white" />
+    <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />
+    </div>
+    <div style="flex-direction:row; display: inline-flex; align-items: center; height: 50px;">
+        <p style="font-size: 18px; height: 10px; font-weight: 500;">Markup Languages: </p>
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/HTML-ff8f17?style=for-the-badge&logo=html5&logoColor=white" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/CSS-7200fc?&style=for-the-badge&logo=css3&logoColor=white" />
+    </div>
+    <div style="flex-direction:row; display: inline-flex; align-items: center; height: 50px;">
+        <p style="font-size: 18px; height: 10px; font-weight: 500;">Unit Tests: </p>
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/mocha.js-323330?style=for-the-badge&logo=mocha&logoColor=Brown" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/chai.js-323330?style=for-the-badge&logo=chai&logoColor=red" />
+    </div>
+    <div style="flex-direction:row; display: inline-flex; align-items: center; height: 50px;">
+        <p style="font-size: 18px; height: 10px; font-weight: 500;">Databases: </p>
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
+        <img style="margin-left: 10px; border-radius: 5px" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+    </div>
+</div>
+
+<h1>Work History</h1>
 
 ```javascript
-const Peterson Larson = {
-    code: [Nodejs, Typescript, Python],
-    askMeAbout: ["react-native", "react-js", "javascript", "frontend", "devops", "backend", "music", "games"],
-    technologies: {
-        backEnd: {
-            nodejs: ["express", "nest.js"],
-            typescript: ["nest.js", "typeorm", "featherjs", "react-native"],
-            python: ["flask", "django", "pandas", "peewee"]
-        },
-        frontEnd: {
-            react: ["react-native", "styled-components", "context-api", "chakra-ui"],
-            html: ["bootstrap"],
-        }        
-    },
-    
-    databases: [PostgreSQL, MongoDB, MySQL, SQLite],
-    devops: [Kubernetes, Docker, Kafka],
-    unit_tests: ["mocha", "jest"],
-    clouds: ["AWS", "Azure Devops"]
-    utils: {
-        system: {
-            linux: ["vscode", "postman", "insomnia", "beekeeper"],
-            windows: ["vscode", "unity", "docker"],       
-        },   
-};
+interface WorkProps {
+    company: String;
+    role: String;
+    start_date: Date;
+    end_date: Date;
+    work_description: String;
+    current: Boolean; 
+}
+
+class Work {
+    public experiences: Array<WorkProps>;
+
+    constructor(props) {
+        super(props)
+        this.experiences = [];
+    }
+
+    setWork() {
+        this.experiences = [
+            {
+                company: "Imobo",
+                role: "Backend Developer",
+                start_date: "2021-12-20",
+                end_date: "2022-04-20",
+                current: false,
+                work_description: "Code creation and maintenance."
+            },
+            {
+                company: "Camerite",
+                role: "Frontend Developer",
+                start_date: "2022-02-14",
+                end_date: "current",
+                current: true,
+                work_description: "Creating a mobile pwa application."
+            }
+        ]
+    }
+}
 ```
-
-- 🔭 I’m currently working on [Camerite](https://camerite.com/)
-
-- 🌱 I’m currently learning **Clean Code, Clean Architecture and DevOps Culture**
-
-- 👯 I'm working on my own project called [Core Forum Base API](https://github.com/ForumLabs/core-forum-base)
-
-- 🤝 My last own project was [Elden Ring API](https://github.com/Pscodium/elden-ring-api)
-
-- 👨‍💻 All of my projects are available at [My Repos](https://github.com/Pscodium?tab=repositories)
-
-- 💬 Ask me about **Python, Node.js, Typescript, React native, Javascript, ReactJs**
-
-- 📫 How to reach me **peter-larson@hotmail.com**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://instagram.com/pscodium" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="pscodium" height="30" width="40" /></a>
-</p>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=pscodium&label=Profile%20views&color=0e75b6&style=flat" alt="pscodium" /> </p>
-
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left" style="display: inline-flex"> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jestjs.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg" alt="jest" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> </p>

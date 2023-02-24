@@ -1,36 +1,15 @@
-import React, { useContext, useEffect } from 'react';
-import MDEditor, { commands, ICommand, EditorContext } from '@uiw/react-md-editor';
+import React, { useEffect } from 'react';
+import MDEditor, { ICommand } from '@uiw/react-md-editor';
 import '../styles/markdown-editor.css';
 import '../styles/markdown-container.css';
 import '../styles/markdown-preview.css';
-import { Button } from '@chakra-ui/react';
+import { Button, useColorMode } from '@chakra-ui/react';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
-
-const ButtonPreview = () => {
-    const { preview ,dispatch } = useContext(EditorContext);
-    const click = () => {
-        dispatch?.({
-            preview: preview === "edit" ? "preview" : "edit"
-        });
-    };
-
-    if (preview === "preview") {
-        return (
-            <Button onClick={click}>Edit</Button>
-        );
-    }
-    return (
-        <Button onClick={click}>Preview</Button>
-    );
-        
-};
-
-  
 const codePreview: ICommand = {
-    name: "preview",
-    keyCommand: "preview",
-    value: "preview",
-    icon: <ButtonPreview />
+    name: "removed",
+    keyCommand: "removed",
+    value: "removed",
 };
 
 
@@ -38,7 +17,9 @@ export default function Markdown() {
     const [value, setValue] = React.useState<string | undefined>("***Hello World***");
     const [viewHeight, setViewHeight] = React.useState(0);
     const [text, setText] = React.useState('');
-
+    const [editMode, setEditMode] = React.useState(false);
+    const { colorMode, toggleColorMode } = useColorMode();
+    
     useEffect(() => {
         setViewHeight(window.innerHeight - 120);
 
@@ -66,14 +47,25 @@ export default function Markdown() {
 
     return (
         <>
-            <div data-color-mode="dark" className="container" style={{height: viewHeight}}>
+            <Button 
+                position="absolute" 
+                top="10px" 
+                right="80px" 
+                onClick={() => setEditMode(!editMode)}
+            >{editMode? "Preview" : "Edit"}
+            </Button>
+            <Button position="absolute" top="10px" right="15px" onClick={() => toggleColorMode()}>
+                {colorMode === "dark" ? <SunIcon/> : <MoonIcon/>}
+            </Button>
+            <div data-color-mode={colorMode == "dark"? "dark" : "light"} className="container" style={{height: viewHeight}}>
                 <MDEditor
                     visibleDragbar={false}
                     style={{ width: "80%" }}
                     value={value}
+                    hideToolbar={editMode? false : true}
                     height={viewHeight / 1}
                     onChange={setValue}
-                    preview="preview"
+                    preview={editMode? "edit" : "preview"}
                     extraCommands={[codePreview]}
                 />
             </div>

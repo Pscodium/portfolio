@@ -175,7 +175,6 @@
   }
   .w-md-editor-toolbar {
     border-bottom: 1px solid var(--color-border-default);
-    background-color: #1f242c;
     padding: 5px 5px;
     display: flex;
     justify-content: space-between;
@@ -251,7 +250,7 @@
   }
   .w-md-editor {
     text-align: left;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-bottom: 1px;
     position: relative;
     color: var(--color-fg-default);
