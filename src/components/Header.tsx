@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex } from "@chakra-ui/react";
+import { Text, Flex, Button } from "@chakra-ui/react";
 import '../styles/header.css';
 
 export default function Header() {
@@ -15,6 +15,7 @@ export default function Header() {
                 fontSize="25px"
                 className="header-title"
             >Pscodium.dev</Text>
+            <Button onClick={() => window.location.href = "/repos"} position="absolute" left="20px">Repos</Button>
         </Flex>
     );
 }
