@@ -14,7 +14,6 @@ export default function Header() {
                 align="center"
                 fontSize="25px"
                 className="header-title"
-                color="#fff"
             >Pscodium.dev</Text>
         </Flex>
     );
