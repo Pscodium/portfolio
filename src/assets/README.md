@@ -65,7 +65,7 @@ interface WorkProps {
 }
 
 class Work {
-    public experiences: Array<WorkProps>;
+    public experiences: WorkProps[];
 
     constructor(props) {
         super(props)
