@@ -70,7 +70,7 @@ class Work {
     constructor(props) {
         super(props)
         this.experiences = [];
-        this.serWork();
+        this.setWork();
     }
 
     setWork() {
