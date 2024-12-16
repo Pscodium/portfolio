@@ -9,7 +9,7 @@
 -----
 <h1>About me</h1>
 
-Hello, my name is Peterson, I'm 22 years old and I live in Brazil.
+Hello, my name is Peterson, I'm 24 years old and I live in Brazil.
 
 I have a great admiration for software development and I like to create applications that somehow increase my technical knowledge.
 
@@ -54,7 +54,7 @@ Now I'm looking for new job opportunities.
 
 <h1>Work History</h1>
 
-```javascript
+```typescript
 interface WorkProps {
     company: String;
     role: String;
@@ -70,10 +70,35 @@ class Work {
     constructor(props) {
         super(props)
         this.experiences = [];
+        this.serWork();
     }
 
     setWork() {
         this.experiences = [
+             {
+                company: "PagoNxt (Santander)",
+                role: "Microservice Developer",
+                start_date: "2024-09-01",
+                end_date: "current",
+                current: true,
+                work_description: "Creating a mobile pwa application."
+            },
+            {
+                company: "Loopert",
+                role: "Full-stack Developer",
+                start_date: "2024-03-21",
+                end_date: "2024-09-30",
+                current: true,
+                work_description: "Creating a mobile pwa application."
+            },
+            {
+                company: "Camerite",
+                role: "Full-stack Developer",
+                start_date: "2022-02-14",
+                end_date: "2024-06-23",
+                current: true,
+                work_description: "Creating a mobile pwa application."
+            },
             {
                 company: "Imobo",
                 role: "Backend Developer",
@@ -81,14 +106,6 @@ class Work {
                 end_date: "2022-04-20",
                 current: false,
                 work_description: "Code creation and maintenance."
-            },
-            {
-                company: "Camerite",
-                role: "Frontend Developer",
-                start_date: "2022-02-14",
-                end_date: "current",
-                current: true,
-                work_description: "Creating a mobile pwa application."
             }
         ]
     }
