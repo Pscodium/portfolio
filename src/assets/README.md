@@ -1,5 +1,5 @@
 <div style="display: inline-flex; align-items: center">
-    <img src="https://cdn.midjourney.com/cda590d8-eeb4-4997-a111-3c443c2c07ee/grid_0.png" style="width:250px; height: 250px; border-radius: 50%"/>
+    <img src="https://cdn.midjourney.com/cda590d8-eeb4-4997-a111-3c443c2c07ee/0_0.png" style="width:250px; height: 250px; border-radius: 50%"/>
     <div style="margin-left: 30px">
         <p style="font-size: 40px; font-weight: 600;">Peterson Larson</p>
         <p>Typescript Developer</p>
